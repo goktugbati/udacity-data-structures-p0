@@ -38,4 +38,4 @@ for call in calls:
     callers.add(call[0])
 
 possible_telemarketers = callers - nonTelemarketers
-print("These numbers could be telemarketers: {}".format(str(sorted(nonTelemarketers))))
+print("These numbers could be telemarketers: {}".format(str(sorted(possible_telemarketers))))
