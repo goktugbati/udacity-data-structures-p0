@@ -1,5 +1,19 @@
 - Task 0: O(1)
-- Task 1: O(n)
+We are accessing the first and last elements of lists in constant time.
+- Task 1: O(n+m)
+We iterate over each element in both calls and texts once that's why the time complexity is dependant on their sizes
 - Task 2: O(n)
-- Task 3: O(n * m + p * log(p))
+We calculate the needed values by iterating over all the elements of calls once
+- Task 3:
+    Part A: O(n * m + p * log(p))
+    We extract the areacode using a regex so that makes our complexity dependant on
+    size of calls and the length of each phone number and then we sort our set in nlog(n) time
+    because we assume that the built in sort function doesn't use brute force.
+    Part B:  O(n)
+    We iterate over calls once so our complexity depends on size of calls.
+    startWith function runs in constant time that's why we can neglect it's affect
 - Task 4: O(n + m + p * log(p))
+ We iterate over calls and texts so size of both lists affects the complexity.
+ p * log(p) comes from sorting of possible_telemarketers
+
+
